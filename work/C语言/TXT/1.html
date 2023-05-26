@@ -94,7 +94,7 @@
                 </blockquote>
                 <h2 id="数学函数">数学函数<a hidden="" class="anchor" aria-hidden="true" href="#数学函数"></a></h2>
                 <ol start="1">
-                    <li>abs():	求整数的绝对值</li>
+                    <li>abs(): 求整数的绝对值</li>
                 </ol>
                 <pre tabindex="0"><code class="hljs cpp">
 int abs(int x);
@@ -105,7 +105,7 @@ x为传入的参数，为int类型，可以为任意整数。如果x的值为正
 /*
 </code></pre>
                 <ol start="2">
-                    <li>fabs():	求浮点数的绝对值</li>
+                    <li>fabs(): 求浮点数的绝对值</li>
                 </ol>
                 <pre tabindex="0"><code class="hljs cpp">
 double fabs(double x);
@@ -115,7 +115,7 @@ x为传入的参数，为double类型，可以为正数、负数、零。
 */
 </code></pre>
                 <ol start="3">
-                    <li>sqrt():	求平方根</li>
+                    <li>sqrt(): 求平方根</li>
                 </ol>
                 <pre tabindex="0"><code class="hljs cpp">
 double sqrt(double x);
@@ -125,7 +125,7 @@ double sqrt(double x);
 */
 </code></pre>
                 <ol start="4">
-                    <li>pow():	求次方</li>
+                    <li>pow(): 求次方</li>
                 </ol>
                 <pre tabindex="0"><code class="hljs cpp">
 double pow(double x,double y);
@@ -134,28 +134,85 @@ x是底数，y是指数。计算x的y次幂，并返回结果。
 例子：pow(2.0,3.0)返回8.000000，pow(2.5,1.5)返回2.25
 */
 </code></pre>
+                <ol start="5">
+                    <li>ceil(): 向上取整</li>
+                </ol>
+                <pre tabindex="0"><code class="hljs cpp">
+double ceil(double x);
+/*
+参数x表示进行向上取整操作的实数。函数返回类型为double,即返回一个双精度浮点型结果。
+例子：ceil(2.4)返回3.0，ceil(3.7)返回4.0
+*/
+</code></pre>
+                <ol start="6">
+                    <li>floor(): 向下取整</li>
+                </ol>
+                <pre tabindex="0"><code class="hljs cpp">
+double floor(double x);
+/*
+例子：floor(3.6)返回3.0，floor(-3.6)返回-4.0
+*/
+</code></pre>
+                <ol start="7">
+                    <li>round(): 四舍五入</li>
+                </ol>
+                <pre tabindex="0"><code class="hljs cpp">
+double round(double x);
+/*
+x是要四舍五入的浮点数，函数返回值为最接近x的整数。
+例子：round(3.49)返回3.000000，round(-3.49)返回-3.000000
+*/
+</code></pre>
+                <ol start="8">
+                    <li>sin(): 求正弦值</li>
+                </ol>
+                <pre tabindex="0"><code class="hljs cpp">
+double sin(double x);
+/*
+了解即可
+*/
+</code></pre>
+                <ol start="9">
+                    <li>cos(): 求余弦值</li>
+                </ol>
+                <pre tabindex="0"><code class="hljs cpp">
+double cos(double x);
+/*
+了解即可
+*/
+</code></pre>
+                <ol start="10">
+                    <li>tan(): 求正切值</li>
+                </ol>
+                <pre tabindex="0"><code class="hljs cpp">
+double tan(double x);
+/*
+了解即可
+*/
+</code></pre>
+                <ol start="11">
+                    <li>log(): 求自然对数</li>
+                </ol>
+                <pre tabindex="0"><code class="hljs cpp">
+double log(double x);
+/*
+x是一个double类型的数值，表示要求自然对数的数。
+了解即可
+*/
+</code></pre>
+                <ol start="12">
+                    <li>exp(): 求e的次方</li>
+                </ol>
+                <pre tabindex="0"><code class="hljs cpp">
+double exp(double x);
+/*
+x表示自然对数的底数e的x次方
+e是数学常数，约等于2.71828
+了解即可
+*/
+</code></pre>
 
-
-                <h2>xxx</h2>
-                <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-                <ol>
-                    <li>xxxxxxxx</li>
-                </ol>
-                <pre tabindex="0"><code class="hljs cpp">xxx
-</code></pre>
-                <ol start="2">
-                    <li>xxxxxxxxxxxx</li>
-                </ol>
-                <pre tabindex="0"><code class="hljs cpp">xxx
-</code></pre>
-                <p>xxxxx</p>
-                <ol start="3">
-                    <li>xxxxxxxxx</li>
-                </ol>
-                <pre tabindex="0"><code class="hljs cpp">xxx
-</code></pre>
-                <p>xxxxxxxx</p>
-            </div> 
+            </div>
         </article>
     </main>
 </body>
