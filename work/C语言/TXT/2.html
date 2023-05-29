@@ -76,8 +76,8 @@
                     <summary accesskey="c" title="(Alt + C)"><span class="details">目录</span></summary>
                     <div class="inner">
                         <ul>
-                            <li><a href="#第1章	C语言概述" aria-label="第1章	C语言概述">第1章	C语言概述</a></li>
-                            <li><a href="#第2章	数据分析、运算符与表达式" aria-label="第2章	数据分析、运算符与表达式">第2章	数据分析、运算符与表达式</a></li>
+                            <li><a href="#第1章	C语言概述" aria-label="第1章	C语言概述">第1章 C语言概述</a></li>
+                            <li><a href="#第2章	数据分析、运算符与表达式" aria-label="第2章	数据分析、运算符与表达式">第2章 数据分析、运算符与表达式</a></li>
                             <li><a>补码、反码、原码</a></li>
                             <li><a>进制转换</a></li>
                         </ul>
@@ -92,7 +92,60 @@
                         转载请注明来源。
                     </p>
                 </blockquote>
-                <h2 id="第1章	C语言概述">第1章	C语言概述<a hidden="" class="anchor" aria-hidden="true" href="#第1章	C语言概述"></a></h2>
+                <style>
+                    .underline {
+                        position: relative;
+                        display: inline-block;
+                        text-decoration: none;
+                        color: black;
+                        cursor: pointer;
+                    }
+
+                    .underline::after {
+                        content: "";
+                        position: absolute;
+                        top: 100%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 100%;
+                        height: 1px;
+                        background-color: #f2f2f2;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: opacity 0.3s, visibility 0s linear 0.3s;
+                    }
+
+                    .underline:hover::after {
+                        visibility: visible;
+                        opacity: 1;
+                        transition: opacity 0.3s;
+                    }
+
+                    .tooltip {
+                        position: absolute;
+                        top: calc(-20%);
+                        /* 调整为负值，向上偏移一些 */
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background-color: transparent;
+                        /* 设置背景为透明 */
+                        padding: 4px;
+                        border: none;
+                        /* 移除边框 */
+                        border-radius: 4px;
+                        font-size: 14px;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: opacity 0.3s;
+                    }
+
+                    .underline:hover .tooltip {
+                        visibility: visible;
+                        opacity: 1;
+                        transition: opacity 0.3s, visibility 0s linear 0.3s;
+                    }
+                </style>
+                <h2 id="第1章	C语言概述">第1章 C语言概述<a hidden="" class="anchor" aria-hidden="true" href="#第1章	C语言概述"></a></h2>
                 <ol start="1">
                     <li>【题1.1】一个C程序的执行是从__A__。</li>
                 </ol>
@@ -100,13 +153,14 @@
                 <p>B）本程序的第一个函数开始，到本程序文件的最后一个函数结束。</p>
                 <p>C）本程序的main函数开始，到本程序文件的最后一个函数结束。</p>
                 <p>D）本程序的第一个函数开始，到本程序main函数结束。</p>
-                
-                <h2 id="第2章	数据分析、运算符与表达式">第2章	数据分析、运算符与表达式<a hidden="" class="anchor" aria-hidden="true" href="#第2章	数据分析、运算符与表达式"></a></h2>
+
+                <h2 id="第2章	数据分析、运算符与表达式">第2章 数据分析、运算符与表达式<a hidden="" class="anchor" aria-hidden="true"
+                        href="#第2章	数据分析、运算符与表达式"></a></h2>
                 <ol start="1">
                     <li>【题2.4】C语言中的标识符只能由字母数字和下划线3钟字符组成，且第一个字符__C__。</li>
                 </ol>
 
-            </div> 
+            </div>
         </article>
     </main>
 </body>
