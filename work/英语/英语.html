@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh" dir="auto">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
@@ -7,14 +8,14 @@
     <script src="./英语/waline.js"></script>
     <link rel="stylesheet" href="./英语/waline.css">
     <link crossorigin="anonymous"
-        href="./英语/stylesheet.min.afe409a71fcfa1663265bbbf96801cabea74c833712f3d49ed3e2956dd89196b.css" rel="preload stylesheet" as="style">
+        href="./英语/stylesheet.min.afe409a71fcfa1663265bbbf96801cabea74c833712f3d49ed3e2956dd89196b.css"
+        rel="preload stylesheet" as="style">
     <script defer="" crossorigin="anonymous"
         src="./英语/search.min.6e8d47c2dc48b24254d7781ac4f528b68d44c472d6cb2372d55cfcc07d7edf11.js"></script>
-	<link rel="shortcut icon" href="index.ico">
+    <link rel="shortcut icon" href="index.ico">
     <script
         type="text/javascript">function downloadJSAtOnload() { var e = document.createElement("script"); e.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7296634171837358", document.body.appendChild(e) } window.addEventListener ? window.addEventListener("load", downloadJSAtOnload, !1) : window.attachEvent ? window.attachEvent("onload", downloadJSAtOnload) : window.onload = downloadJSAtOnload</script>
-    <script async="" defer="" data-website-id="3d947a98-2774-46b0-805f-fe2e4877a1d7"
-        src="./英语/umami.js"></script>
+    <script async="" defer="" data-website-id="3d947a98-2774-46b0-805f-fe2e4877a1d7" src="./英语/umami.js"></script>
     <script async="" src="./英语/busuanzi.pure.mini.js"></script>
     <link rel="stylesheet" href="./英语/font-awesome.min.css"><noscript>
         <style>
@@ -58,6 +59,23 @@
     <header class="header">
         <nav class="nav">
             <div class="logo"><a href="../../index.html" title="🏡">🏡 djrsdyp</a>
+                <span class="logo-switches"><button id="theme-toggle" accesskey="t" title="(Alt + T)"><svg id="moon"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                        </svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg></button></span>
             </div>
             <ul id="menu">
                 <li><a href="../Tags/Tags.html" title="🏷️ 标签"><span>🏷️ 标签</span></a></li>
@@ -79,13 +97,17 @@
                     <div class="archive-entry">
                         <h4 class="archive-entry-title">Lesson-1</h4>
                         <div class="archive-meta">May 29, 2023&nbsp;·&nbsp;djr</div><a class="entry-link"
-                            aria-label="xxxx"
-                            href="./TXT/1.html"></a>
+                            aria-label="xxxx" href="./TXT/1.html"></a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <script>let menu = document.getElementById("menu"); menu.scrollLeft = localStorage.getItem("menu-scroll-position"), menu.onscroll = function () { localStorage.setItem("menu-scroll-position", menu.scrollLeft) }, document.querySelectorAll('a[href^="#"]').forEach(e => { e.addEventListener("click", function (e) { e.preventDefault(); var t = this.getAttribute("href").substr(1); window.matchMedia("(prefers-reduced-motion: reduce)").matches ? document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView() : document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({ behavior: "smooth" }), t === "top" ? history.replaceState(null, null, " ") : history.pushState(null, null, `#${t}`) }) })</script>
+    <script>var mybutton = document.getElementById("top-link"); window.onscroll = function () { document.body.scrollTop > 800 || document.documentElement.scrollTop > 800 ? (mybutton.style.visibility = "visible", mybutton.style.opacity = "1") : (mybutton.style.visibility = "hidden", mybutton.style.opacity = "0") }</script>
+    <script>document.getElementById("theme-toggle").addEventListener("click", () => { document.body.className.includes("dark") ? (document.body.classList.remove("dark"), localStorage.setItem("pref-theme", "light")) : (document.body.classList.add("dark"), localStorage.setItem("pref-theme", "dark")) })</script>
+    <meta name="”apple-mobile-web-app-capable”" content="”yes”">
+    <script>"serviceWorker" in navigator && window.addEventListener("load", () => { navigator.serviceWorker.register("/service-worker.js") })</script>
 </body>
 
 </html>
