@@ -86,7 +86,7 @@ const archiveCountElement = document.querySelector('sup.archive-count');
 archiveCountElement.textContent = ` ${totalCount}`;
 
 //获取值
-var countValue = document.getElementById('Englist').textContent.trim();
+var countValue = document.getElementById('English').textContent.trim();
 
 // 存储值到本地存储（Local Storage）
-localStorage.setItem('EnglistValue', countValue);
+localStorage.setItem('EnglishValue', countValue);
