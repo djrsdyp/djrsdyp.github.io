@@ -86,4 +86,4 @@ const archiveCountElement = document.querySelector('sup.archive-count');
 archiveCountElement.textContent = ` ${totalCount}`;
 
 //获取值
-var countValue = document.getElementById('count').textContent.trim();
+var countValue = document.getElementById('Englist').textContent.trim();
