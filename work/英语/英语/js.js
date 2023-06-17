@@ -84,3 +84,6 @@ const archiveCountElement = document.querySelector('sup.archive-count');
 
 // 更新 <sup class="archive-count">&nbsp;&nbsp;2</sup> 元素的值
 archiveCountElement.textContent = ` ${totalCount}`;
+
+//获取值
+var countValue = document.getElementById('count').textContent.trim();
