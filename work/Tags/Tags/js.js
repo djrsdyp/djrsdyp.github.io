@@ -1,2 +1,2 @@
 // 设置值
-document.getElementById('countValue').textContent = countValue;
+document.getElementById('EnglishValue').textContent = countValue;
