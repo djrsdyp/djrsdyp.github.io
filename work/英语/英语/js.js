@@ -87,3 +87,6 @@ archiveCountElement.textContent = ` ${totalCount}`;
 
 //获取值
 var countValue = document.getElementById('Englist').textContent.trim();
+
+// 存储值到本地存储（Local Storage）
+localStorage.setItem('EnglistValue', countValue);
