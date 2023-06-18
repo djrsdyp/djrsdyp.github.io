@@ -86,8 +86,8 @@
             <li><a href="../英语/英语.html">英语 <sup><strong><sup id="EnglishValue">2</sup></strong></sup></a></li>
             <li><a href="../C语言/C语言.html">C语言 <sup><strong><sup id="CValue">2</sup></strong></sup></a></li>
             <li><a href="../网络安全/网络安全.html">网络安全 <sup><strong><sup id="NTSecurityValue">2</sup></strong></sup></a></li>
-            <li><a href="../计算机基础/计算机基础.html">计算机基础 <sup><strong><sup id="ComputerFoundationValue">0</sup></strong></sup></a></li>
-            <li><a href="../驾考/驾考.html">驾考 <sup><strong><sup id="DriveValue">1</sup></strong></sup></a></li>
+            <li><a href="../计算机基础/计算机基础.html">计算机基础 <sup><strong><sup id="ComputerFoundationValue">2</sup></strong></sup></a></li>
+            <li><a href="../驾考/驾考.html">驾考 <sup><strong><sup id="DriveValue">2</sup></strong></sup></a></li>
         </ul>
     </main>
     <script>let menu = document.getElementById("menu"); menu.scrollLeft = localStorage.getItem("menu-scroll-position"), menu.onscroll = function () { localStorage.setItem("menu-scroll-position", menu.scrollLeft) }, document.querySelectorAll('a[href^="#"]').forEach(e => { e.addEventListener("click", function (e) { e.preventDefault(); var t = this.getAttribute("href").substr(1); window.matchMedia("(prefers-reduced-motion: reduce)").matches ? document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView() : document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({ behavior: "smooth" }), t === "top" ? history.replaceState(null, null, " ") : history.pushState(null, null, `#${t}`) }) })</script>
