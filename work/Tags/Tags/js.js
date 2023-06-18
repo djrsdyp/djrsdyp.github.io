@@ -17,7 +17,7 @@ var countValue = localStorage.getItem('NTSecurity');
 document.getElementById('NTSecurityValue').textContent = countValue;
 
 // 获取存储的值
-var countValue = localStorage.getItem('NTSecurity');
+var countValue = localStorage.getItem('ComputerFoundation');
 
 // 设置值
-document.getElementById('NTSecurityValue').textContent = countValue;
+document.getElementById('ComputerFoundationValue').textContent = countValue;
