@@ -21,3 +21,9 @@ var countValue = localStorage.getItem('ComputerFoundation');
 
 // 设置值
 document.getElementById('ComputerFoundationValue').textContent = countValue;
+
+// 获取存储的值
+var countValue = localStorage.getItem('Drive');
+
+// 设置值
+document.getElementById('DriveValue').textContent = countValue;
