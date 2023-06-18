@@ -20,7 +20,7 @@ document.getElementById('NTSecurityValue').textContent = countValue;
 var countValue = localStorage.getItem('ComputerFoundationValue');
 
 // 设置值
-document.getElementById('ComputerFoundationValueValue').textContent = countValue;
+document.getElementById('ComputerFoundationValue').textContent = countValue;
 
 // 获取存储的值
 var countValue = localStorage.getItem('DriveValue');
