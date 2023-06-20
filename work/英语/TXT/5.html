@@ -53,24 +53,26 @@
         <style>
             .image-container {
                 position: relative;
-                width: fit-content;
-                cursor: pointer;
+                width: 100%;
+                height: 0;
+                padding-bottom: 70%;
+                /* 图片高度相对于容器宽度的百分之70 */
+                overflow: hidden;
+                transition: all 0.3s ease;
+                /* 过渡效果，可根据需要调整过渡时间 */
             }
 
             .image-container img {
-                width: 100%;
-                /* 图片充满容器 */
-                transition: transform 0.3s ease-in-out;
-                /* 添加过渡效果 */
-            }
-
-            .zoomed {
                 position: absolute;
                 top: 0;
                 left: 0;
-                transform-origin: top left;
-                cursor: move;
-                /* 设置拖动手势 */
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                /* 过渡效果，可根据需要调整过渡时间 */
+                transform-origin: 0 0;
+                /* 缩放变换的基点为左上角 */
             }
         </style>
     </noscript>
