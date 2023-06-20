@@ -54,25 +54,39 @@
         <style>
             .image-container {
                 position: relative;
+                /* 相对定位，用于绝对定位子元素 */
                 width: 100%;
+                /* 宽度占满父元素 */
                 height: auto;
+                /* 高度自适应内容 */
                 overflow: hidden;
+                /* 隐藏溢出部分 */
             }
 
             .image-container img {
                 width: 100%;
+                /* 图片宽度占满容器 */
                 height: auto;
+                /* 图片高度自适应 */
                 transition: transform 0.3s ease;
+                /* 添加过渡效果，使放大缩小过程平滑 */
             }
 
             .image-container img.zoomed {
                 position: absolute;
+                /* 绝对定位，使其脱离文档流 */
                 top: 50%;
+                /* 相对于容器顶部50%的位置 */
                 left: 50%;
+                /* 相对于容器左侧50%的位置 */
                 transform: translate(-50%, -50%) scale(1.7);
+                /* 平移到容器中心并放大1.7倍 */
                 max-width: 70%;
+                /* 最大宽度为父容器的70% */
                 max-height: 70%;
+                /* 最大高度为父容器的70% */
                 cursor: move;
+                /* 设置光标为移动样式，表示可拖动 */
             }
         </style>
     </noscript>
