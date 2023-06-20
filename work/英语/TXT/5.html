@@ -53,22 +53,23 @@
         <style>
             .image-container {
                 position: relative;
+                width: fit-content;
                 cursor: pointer;
             }
 
             .image-container img {
-                width: 200px;
-                /* 初始大小 */
+                width: 100%;
+                /* 图片充满容器 */
                 transition: transform 0.3s ease-in-out;
                 /* 添加过渡效果 */
             }
 
-            .image-container img.zoomed {
-                transform: scale(1.5);
-                /* 点击放大后的大小 */
-                z-index: 9999;
-                /* 确保图片位于顶层 */
-                cursor: grab;
+            .zoomed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform-origin: top left;
+                cursor: move;
                 /* 设置拖动手势 */
             }
         </style>
@@ -131,7 +132,7 @@
                 <h2 id="思维图">思维图<a hidden="" class="anchor" aria-hidden="true" href="#思维图"></a></h2>
                 <div class="image-container">
                     <img src="./image/时态.png" alt="时态">
-                  </div>
+                </div>
             </div>
         </article>
     </main>
