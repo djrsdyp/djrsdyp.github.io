@@ -6,7 +6,7 @@ $(document).ready(function() {
   // 点击图片触发放大/缩小
   $('#image').on('click', function() {
     if (scale === 1) {
-      scale = 2; // 放大到2倍
+      scale = 4; // 放大到2倍
       $(this).css('transform', 'scale(' + scale + ')');
     } else {
       scale = 1; // 缩小回原始大小
