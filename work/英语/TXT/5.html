@@ -50,6 +50,28 @@
                 }
             }
         </style>
+        <style>
+            .image-container {
+                position: relative;
+                cursor: pointer;
+            }
+
+            .image-container img {
+                width: 200px;
+                /* 初始大小 */
+                transition: transform 0.3s ease-in-out;
+                /* 添加过渡效果 */
+            }
+
+            .image-container img.zoomed {
+                transform: scale(1.5);
+                /* 点击放大后的大小 */
+                z-index: 9999;
+                /* 确保图片位于顶层 */
+                cursor: grab;
+                /* 设置拖动手势 */
+            }
+        </style>
     </noscript>
     <script src="./css/mermaid.min.js" crossorigin="anonymous"></script>
 
