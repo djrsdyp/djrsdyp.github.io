@@ -52,41 +52,23 @@
             }
         </style>
         <style>
-            .image-container {
+            #imageContainer {
                 position: relative;
-                /* 相对定位，用于绝对定位子元素 */
-                width: 100%;
-                /* 宽度占满父元素 */
-                height: auto;
-                /* 高度自适应内容 */
                 overflow: hidden;
-                /* 隐藏溢出部分 */
+                width: 400px;
+                /* 设置容器的宽度 */
+                height: 300px;
+                /* 设置容器的高度 */
             }
 
-            .image-container img {
+            #image {
                 width: 100%;
-                /* 图片宽度占满容器 */
-                height: auto;
-                /* 图片高度自适应 */
-                transition: transform 0.5s ease;
-                /* 添加过渡效果，使放大缩小过程平滑 */
-            }
-
-            .image-container img.zoomed {
-                position: absolute;
-                /* 绝对定位，使其脱离文档流 */
-                top: 50%;
-                /* 相对于容器顶部50%的位置 */
-                left: 50%;
-                /* 相对于容器左侧50%的位置 */
-                transform: translate(-50%, -50%) scale(3);
-                /* 平移到容器中心并放大3倍 */
-                max-width: 70%;
-                /* 最大宽度为父容器的70% */
-                max-height: 70%;
-                /* 最大高度为父容器的70% */
-                cursor: move;
-                /* 设置光标为移动样式，表示可拖动 */
+                /* 设置图片的宽度为容器宽度 */
+                height: 100%;
+                /* 设置图片的高度为容器高度 */
+                transition: transform 0.3s ease;
+                /* 添加过渡效果 */
+                cursor: pointer;
             }
         </style>
     </noscript>
@@ -146,8 +128,8 @@
                     </p>
                 </blockquote>
                 <h2 id="思维图">思维图<a hidden="" class="anchor" aria-hidden="true" href="#思维图"></a></h2>
-                <div class="image-container">
-                    <img src="./image/时态.png" alt="时态">
+                <div id="imageContainer">
+                    <img id="image" src="./image/时态.png" alt="Image">
                 </div>
             </div>
         </article>
