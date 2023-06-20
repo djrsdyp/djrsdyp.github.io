@@ -51,16 +51,10 @@
                 }
             }
         </style>
-        <style>
-            #image {
-                width: 200px;
-                height: 200px;
-                transition: transform 0.3s ease;
-                cursor: pointer;
-            }
-        </style>
     </noscript>
     <script src="./css/mermaid.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.0/viewer.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.0/viewer.min.js"></script>
 
 <body class="list" id="top">
     <header class="header">
@@ -116,7 +110,7 @@
                     </p>
                 </blockquote>
                 <h2 id="思维图">思维图<a hidden="" class="anchor" aria-hidden="true" href="#思维图"></a></h2>
-                <img id="image" src="./image/时态.png" alt="Image">
+                <img id="my-image" src="./image/时态.png" alt="My Image">
             </div>
         </article>
     </main>
@@ -131,7 +125,6 @@
     <meta name="”apple-mobile-web-app-capable”" content="”yes”">
     <script>"serviceWorker" in navigator && window.addEventListener("load", () => { navigator.serviceWorker.register("/service-worker.js") })</script>
     <script src="./css/js.js"></script>
-
 </body>
 
 </html>
