@@ -55,25 +55,24 @@
             .image-container {
                 position: relative;
                 width: 100%;
-                height: 0;
-                padding-bottom: 70%;
-                /* 图片高度相对于容器宽度的百分之70 */
+                height: auto;
                 overflow: hidden;
-                transition: all 0.3s ease;
-                /* 过渡效果，可根据需要调整过渡时间 */
             }
 
             .image-container img {
-                position: absolute;
-                top: 0;
-                left: 0;
                 width: 100%;
-                height: 100%;
-                cursor: pointer;
-                transition: all 0.3s ease;
-                /* 过渡效果，可根据需要调整过渡时间 */
-                transform-origin: 0 0;
-                /* 缩放变换的基点为左上角 */
+                height: auto;
+                transition: transform 0.3s ease;
+            }
+
+            .image-container img.zoomed {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) scale(1.7);
+                max-width: 70%;
+                max-height: 70%;
+                cursor: move;
             }
         </style>
     </noscript>
@@ -134,9 +133,8 @@
                 </blockquote>
                 <h2 id="思维图">思维图<a hidden="" class="anchor" aria-hidden="true" href="#思维图"></a></h2>
                 <div class="image-container">
-                    <img src="./image/时态.png" alt="Image">
+                    <img src="./image/时态.png" alt="时态">
                 </div>
-                <img src="./image/时态.png" alt="Image">
             </div>
         </article>
     </main>
@@ -151,7 +149,7 @@
     <meta name="”apple-mobile-web-app-capable”" content="”yes”">
     <script>"serviceWorker" in navigator && window.addEventListener("load", () => { navigator.serviceWorker.register("/service-worker.js") })</script>
     <script src="./css/js.js"></script>
-    
+
 </body>
 
 </html>
